@@ -2,6 +2,18 @@
 
 This project was bootstrapped with Vite's React Typescript template.
 
+## How to Clone
+
+This project can be cloned from the [repo](https://github.com/apersaud-dev/component-test) or you can download the [Git Bundle file](https://drive.google.com/file/d/1XqnfMbisjoFEjJJI4zyayHAu2QJypmkH/view?usp=sharing).
+
+From there, you can perform the following steps:
+
+- After downloading the git bundle file, place it in a new folder. In your terminal, navigate to the folder directory and initialize git using `git init`
+- Add the origin remote using `git remote add origin https://github.com/apersaud-dev/component-test`
+- Verify the remote using `git remote -v`
+- Fetch from the origin using `git fetch origin`
+- Pull from the origin using `git pull origin main`
+
 ## Available Scripts
 
 First, ensure you are using version 16.20.2 of node or higher. In the terminal, navigate to the root of the project directory and run:
