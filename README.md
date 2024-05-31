@@ -4,16 +4,21 @@ This project was bootstrapped with Vite's React Typescript template.
 
 ## Available Scripts
 
-In the root directory (component-test), you can run:
+First, ensure you are using version 16.20.2 of node or higher. In the terminal, navigate to the root of the project directory and run:
 
-### `npm run dev`
+#### `npm i` or `npm install`
 
-Runs the app in the development mode.
-Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+Once the node modules are installed, you can run:
 
-### `npm run test`
+#### `npm run dev`
 
-Runs all of the test files in the test directory.
+which will run the app in the development mode. From there, you can open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+
+The command:
+
+#### `npm run test`
+
+will run all of the test files in the test directory.
 
 ## Notes
 
