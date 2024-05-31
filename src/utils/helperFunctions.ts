@@ -50,6 +50,5 @@ export const toggleTickAll = (list: IFile[], tick: boolean): IFile[] => {
         }
         return entry;
     })
-    console.log(toggledList);
     return toggledList;
 }

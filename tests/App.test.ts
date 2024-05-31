@@ -32,9 +32,8 @@ describe('Determine if checkbox value has changed', () => {
     configuredData[0].ticked = true;
 
     const resultList = updateCheckbox(configuredData, configuredData[0].name, false);
-    console.log(resultList);
-    expect(resultList[0].ticked).toBe(false);
 
+    expect(resultList[0].ticked).toBe(false);
   });
 
   test('Array of one item updating to true', () => {
