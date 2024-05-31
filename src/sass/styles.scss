@@ -1,0 +1,216 @@
+@import './partials/reset';
+
+.list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    border-bottom: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    border-bottom: 1px solid lightgrey;
+
+    &__selection {
+        width: 120px;
+        margin: 8px 10px;
+        text-align: left;
+    }
+
+    button svg {
+        width: 20px;
+    }
+
+    &__download {
+        display: flex;
+        align-items: center;
+        width: 200px;
+        margin: 8px 10px;
+    }
+
+    &__downloadButton {
+        cursor: pointer;
+        border: none;
+        background: none;
+        outline: none;
+
+        &--disabled {
+            @extend .header__downloadButton;
+            cursor: auto;
+
+            & svg {
+                fill: grey;         
+            } 
+        }
+    }
+}
+
+.categories {
+    display: flex;
+    font-size: 14px;
+    text-align: left;
+    border-bottom: 1px solid lightgrey;
+
+    &__name {
+        width: 170px;
+        padding-left: 45px;
+        margin: 8px 10px 8px 30px;
+    }
+
+    &__device {
+        width: 160px;
+        margin: 8px 10px;
+    }
+
+    &__path {
+        width: 350px;
+        margin: 8px 10px;
+        flex-grow: 1;
+    }
+
+    &__status {
+        width: 90px;
+        padding-left: 12px;
+        margin: 8px 10px;
+    }
+}
+
+.listEntry {
+    display: flex;
+    font-size: 12px;
+    text-align: left;
+    border-bottom: 1px solid lightgrey;
+
+    &:has(input[type="checkbox"]:checked) {
+        background-color: silver;
+    }
+
+    &:hover {
+        background-color: gainsboro;
+    }
+
+    &__name {
+        width: 120px;
+        padding-left: 20px;
+        margin: 8px 10px;
+    }
+
+    &__device {
+        width: 175px;
+        padding-left: 27px;
+        margin: 8px 10px;
+    }
+
+    &__path {
+        width: 360px;
+        padding-left: 10px;
+        margin: 8px 10px;
+        flex-grow: 1;
+    }
+}
+
+.tristateCheckbox {
+    width: 16px;
+    margin: 8px 14px;
+    cursor: pointer;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    width: 90px;
+    padding: 2px 5px;
+    margin-right: 20px;
+    
+    &__available{
+        width: 12px;
+        height: 12px;
+        background-color: limegreen;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+
+    &__scheduled {
+        @extend .status__available;
+        background-color: transparent;
+    }
+}
+
+.alert {
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    background: #fbfbfb;
+    padding: 20px;
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(92, 92, 92, 0.63);
+    }
+
+    &__closeButton {
+        position: absolute;
+        top: 6px;
+        right: 6px;
+        border: none;
+        cursor: pointer;
+        background: none;
+        transition: all linear 0.3s;
+
+
+        &:hover svg {
+            fill: black;
+            transition: all linear 0.3s;
+        }
+
+
+        & svg {
+            width: 14px;
+            fill: darkgray;
+        }
+    }
+
+    &__available {
+        width: 550px;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+    }
+
+    &__availableInfo {
+        text-align: left;
+        font-size: 12px;
+    }
+
+    &__unavailable {
+        @extend .alert__available;
+    
+    }
+
+    &__unavailableInfo {
+        @extend .alert__availableInfo;
+    }
+
+    &__entry {
+        list-style: circle;
+        margin-left: 20px;
+    }
+
+    &__data {
+        text-align: left;
+        font-size: 12px;
+    }
+}
+  
