@@ -4,7 +4,7 @@ This project was bootstrapped with Vite's React Typescript template.
 
 ## How to Clone
 
-This project can be cloned from the [repo](https://github.com/apersaud-dev/component-test) or you can download the [Git Bundle file](https://drive.google.com/file/d/1XqnfMbisjoFEjJJI4zyayHAu2QJypmkH/view?usp=sharing).
+This project can be cloned from the [repo](https://github.com/apersaud-dev/component-test) or you can download the [Git Bundle file](https://drive.google.com/file/d/12SqkeZwfFkOfbBRGQBPaVKbpl4eHyMoX/view?usp=sharing).
 
 From there, you can perform the following steps:
 
